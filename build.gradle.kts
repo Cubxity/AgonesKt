@@ -6,6 +6,7 @@ import com.google.protobuf.gradle.protobuf
 plugins {
     kotlin("jvm") version "1.4.31"
     id("com.google.protobuf") version "0.8.15"
+    maven
 }
 
 group = "dev.cubxity.libs"
