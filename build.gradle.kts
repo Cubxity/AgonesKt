@@ -1,7 +1,7 @@
 import com.google.protobuf.gradle.*
 
 plugins {
-    kotlin("jvm") version "1.4.31"
+    kotlin("jvm") version "1.4.32"
     id("com.google.protobuf") version "0.8.15"
     maven
 }
@@ -15,12 +15,12 @@ repositories {
 
 dependencies {
     api(kotlin("stdlib"))
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3")
 
-    api("com.google.protobuf:protobuf-java-util:3.15.3")
+    api("com.google.protobuf:protobuf-java-util:3.15.8")
     api("io.grpc:grpc-kotlin-stub:1.0.0")
 
-    runtimeOnly("io.grpc:grpc-netty:1.36.0")
+    runtimeOnly("io.grpc:grpc-netty:1.37.0")
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
 }
 
